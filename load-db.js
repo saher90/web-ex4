@@ -13,7 +13,7 @@ const dbName = 'ex4'; // Database Name
 
 
 // Use connect method to connect to the server
-MongoClient.connect(url, function(err, client) {
+MongoClient.connect(url,{ useUnifiedTopology: true }, function(err, client) {
     
     assert.equal(null, err);
     console.log("Connected successfully to MongoDB server");
@@ -26,6 +26,7 @@ MongoClient.connect(url, function(err, client) {
         let capitals = JSON.parse(data);    // read data from json file
             
         const collection = db.collection('countries');      // Get the countries collection
+        console.log(capitals);
         collection.insertMany(capitals, function(err, result) {  // Insert documents
             assert.equal(err, null);
             console.log(result);
