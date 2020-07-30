@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const fs = require('fs');
-
+const PORT=process.env.PORT || 5000
 const MongoClient = require('mongodb').MongoClient;
 const assert = require('assert'); 
 const url = 'mongodb://localhost:27017'; // mongodb Connection URL
@@ -19,7 +19,7 @@ MongoClient.connect(url, function(err, client) {
     const db = client.db(dbName);
 
 
-    app.listen(5000, function () {
+    app.listen(PORT, function () {
         console.log('Node server is running on port 5000...');
     });
     
