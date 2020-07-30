@@ -11,12 +11,12 @@ const dbName = 'ex4'; // Database Name
 
 
 // Use connect method to connect to the server
-MongoClient.connect(url,{ useUnifiedTopology: true }, function(err, client) {
+//MongoClient.connect(url,{ useUnifiedTopology: true }, function(err, client) {
     
-    assert.equal(null, err);
-    console.log("Connected successfully to server");
+ //   assert.equal(null, err);
+  //  console.log("Connected successfully to server");
     
-    const db = client.db(dbName);
+   // const db = client.db(dbName);
 
 
     app.listen(PORT, function () {
@@ -34,6 +34,7 @@ MongoClient.connect(url,{ useUnifiedTopology: true }, function(err, client) {
         var searchBar = {"name":req.body.name};
             
             // Find all documents
+            /*
             const collection = db.collection('countries');
              
             
@@ -47,7 +48,7 @@ MongoClient.connect(url,{ useUnifiedTopology: true }, function(err, client) {
                 console.log(array)
                 res.send(array)
             })            
-           
+           */
     })
 
-});
+//});
