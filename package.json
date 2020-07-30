@@ -6,7 +6,7 @@
   "scripts": {
     "start1": "node load-db.js",
     "start2": "node server.js",
-    "start":"npm run start1 && npm run start2"
+    "start":"npm run start2"
 
   },
   "author": "",
