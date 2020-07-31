@@ -45,9 +45,7 @@ MongoClient.connect(url,{ useUnifiedTopology: true }, function(err, client) {
                 docs.forEach(element => {
                     array.push(element.country)
                 });
-                console.log(array)
-
-                res.send(["shfa","haifa"])
+                res.send(array)
             })            
            
     })
