@@ -17,7 +17,7 @@ MongoClient.connect(url,{ useUnifiedTopology: true }, function(err, client) {
     console.log("Connected successfully to server");
     
     const db = client.db(dbName);
-
+    console.log(url)
 
     app.listen(PORT, function () {
         console.log('Node server is running on port 5000...');
@@ -34,7 +34,7 @@ MongoClient.connect(url,{ useUnifiedTopology: true }, function(err, client) {
         var searchBar = {"name":req.body.name};
             
             // Find all documents
-            
+            console.log(url)
             const collection = db.collection('countries');
              
             
