@@ -4,19 +4,19 @@ const fs = require('fs');
 const PORT=process.env.PORT || 5000
 const MongoClient = require('mongodb').MongoClient;
 const assert = require('assert'); 
-const url = 'mongodb://localhost:27017'; // mongodb Connection URL
-const dbName = 'ex4'; // Database Name
+const url =  process.env.MONGODB_URI || 'mongodb://localhost:27017'; // mongodb Connection URL
+const dbName = 'heroku_9200wlz6'; // Database Name
 
 
 
 
 // Use connect method to connect to the server
-//MongoClient.connect(url,{ useUnifiedTopology: true }, function(err, client) {
+MongoClient.connect(url,{ useUnifiedTopology: true }, function(err, client) {
     
- //   assert.equal(null, err);
-  //  console.log("Connected successfully to server");
+   assert.equal(null, err);
+    console.log("Connected successfully to server");
     
-   // const db = client.db(dbName);
+    const db = client.db(dbName);
 
 
     app.listen(PORT, function () {
@@ -34,7 +34,7 @@ const dbName = 'ex4'; // Database Name
         var searchBar = {"name":req.body.name};
             
             // Find all documents
-            /*
+            
             const collection = db.collection('countries');
              
             
@@ -48,7 +48,7 @@ const dbName = 'ex4'; // Database Name
                 console.log(array)
                 res.send(array)
             })            
-           */
+           
     })
 
-//});
+});
