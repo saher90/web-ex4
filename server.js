@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const fs = require('fs');
+const path = require('path');
 const PORT=process.env.PORT || 5000
 const MongoClient = require('mongodb').MongoClient;
 const assert = require('assert'); 
@@ -22,7 +23,7 @@ MongoClient.connect(url,{ useUnifiedTopology: true }, function(err, client) {
     app.listen(PORT, function () {
         console.log('Node server is running on port 5000...');
     });
-    
+    app.use(express.static(path.resolve(__dirname, 'client', 'public')));
     app.use(express.urlencoded()); // Parse URL-encoded bodies
 
     app.get('/', function (req, res) {
