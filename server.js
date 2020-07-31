@@ -47,7 +47,7 @@ MongoClient.connect(url,{ useUnifiedTopology: true }, function(err, client) {
                 });
                 console.log(array)
 
-                res.send({"country":"shfa"})
+                res.send(["shfa","haifa"])
             })            
            
     })
