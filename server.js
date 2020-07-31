@@ -34,7 +34,7 @@ MongoClient.connect(url,{ useUnifiedTopology: true }, function(err, client) {
         var searchBar = {"name":req.body.name};
             
             // Find all documents
-            console.log(url)
+            
             const collection = db.collection('countries');
              
             
@@ -46,7 +46,8 @@ MongoClient.connect(url,{ useUnifiedTopology: true }, function(err, client) {
                     array.push(element.country)
                 });
                 console.log(array)
-                res.send(array)
+
+                res.send({"country":"shfa"})
             })            
            
     })
