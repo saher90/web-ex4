@@ -26,7 +26,7 @@ MongoClient.connect(url,{ useUnifiedTopology: true }, function(err, client) {
     app.use(express.urlencoded()); // Parse URL-encoded bodies
 
     app.get('/', function (req, res) {
-        fs.createReadStream('./public/index.html').pipe(res);
+        fs.createReadStream('./client/index.html').pipe(res);
     });
 
     app.post('/', (req, res) => {    
