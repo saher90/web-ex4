@@ -1,0 +1,30 @@
+.container {
+    margin-top: 20px;
+}
+
+#fill-form {
+    width: 100%;
+}
+
+li {
+    list-style-type: none;
+
+}
+
+ul {
+    padding-left: 5px;
+}
+
+#matchCountries li:hover {
+    cursor: pointer;
+}
+
+#country {
+    width: 50%;
+}
+
+#form-wrap {
+    background-color: rgb(206, 208, 209);
+    border-radius: 5px;
+    padding: 10px;
+}
