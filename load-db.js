@@ -20,13 +20,12 @@ MongoClient.connect(url, function(err, client) {
         
     const db = client.db(dbName);
 
-    fs.readFile('capitals.json', (err, data) => {
+    fs.readFile('products.json', (err, data) => {
         
         if (err) throw err;
         let capitals = JSON.parse(data);    // read data from json file
             
-        const collection = db.collection('countries');      // Get the countries collection
-        console.log(capitals);
+        const collection = db.collection('products');      // Get the countries collection
         collection.insertMany(capitals, function(err, result) {  // Insert documents
             assert.equal(err, null);
             console.log(result);

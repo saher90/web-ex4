@@ -1,0 +1,62 @@
+[
+    {
+        "name":"ahri",
+        "price": 20,
+        "img-name":"League-of-Legends-Ahri-and-D-Va.jpg"
+    },
+    {
+        "name":"akali",
+        "price": 20,
+        "img-name":"League-of-Legends-akali.jpg"
+    },
+    {
+        "name":"irelia",
+        "price": 20,
+        "img-name":"League-of-Legends-Irelia.jpg"
+    },
+    {
+        "name":"janna",
+        "price": 20,
+        "img-name":"League-of-Legends-Janna.jpg"
+    },
+    {
+        "name":"jinx",
+        "price": 20,
+        "img-name":"League-of-Legends-Jinx.jpg"
+    },
+    {
+        "name":"katarina",
+        "price": 20,
+        "img-name":"League-of-Legends-Katarina.jpg"
+    },
+    {
+        "name":"kindred",
+        "price": 20,
+        "img-name":"League-of-Legends-Kindred.jpg"
+    },
+    {
+        "name":"lux",
+        "price": 20,
+        "img-name":"League-of-Legends-Lux.jpg"
+    },
+    {
+        "name":"riven-yasuo",
+        "price": 20,
+        "img-name":"League-of-Legends-Riven-Yasuo.jpg"
+    },
+    {
+        "name":"xayah-rakan",
+        "price": 20,
+        "img-name":"League-of-Legends-Xayah-Rakan.jpg"
+    },
+    {
+        "name":"zed-1",
+        "price": 20,
+        "img-name":"League-of-Legends-Zed.jpg"
+    },
+    {
+        "name":"zed-2",
+        "price": 20,
+        "img-name":"League-of-Legends-Zed-Game-Canvas.jpg"
+    }
+]
